@@ -1,0 +1,3 @@
+# Python webserver dependencies
+# No external dependencies required for this simple server
+# The http.server and socketserver modules are part of Python standard library
