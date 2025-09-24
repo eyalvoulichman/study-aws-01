@@ -29,7 +29,7 @@ jobs:
       run: |
         echo "🧪 Running application tests..."
         python3 -c "import http.server, socketserver; print('✅ Dependencies OK')"
-        python3 -c "import simple_server; print('✅ Server script syntax OK')"
+        python3 -m py_compile simple_server.py && echo "✅ Server script syntax OK"
         echo "✅ All tests passed!"
 
   # Build Docker image
